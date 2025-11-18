@@ -1,0 +1,10 @@
+<ul>
+    {{#each products}}
+        <li>
+            ID: {{this.id}} | 
+            Nombre: {{this.name}} | 
+            Precio: ${{this.price}} 
+            <button onclick="deleteProduct('{{this.id}}')">Eliminar (Socket)</button>
+        </li>
+    {{/each}}
+</ul>

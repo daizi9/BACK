@@ -1,0 +1,8 @@
+<h1>Lista de Productos (Vista Estática)</h1>
+<ul>
+    {{#each products}}
+        <li>ID: {{this.id}} | Nombre: {{this.name}} | Precio: ${{this.price}}</li>
+    {{/each}}
+</ul>
+<p>Esta vista solo se actualiza al recargar la página.</p>
+<a href="/realtimeproducts">Ir a la Vista en Tiempo Real</a>
